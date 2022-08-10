@@ -16,6 +16,10 @@ var myPieChart = new Chart(ctx, {
     }],
   },
   options: {
+    title: {
+      display: true,
+      text: '총 에너지사용량'
+    },
     maintainAspectRatio: false,
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
@@ -35,19 +39,23 @@ var myPieChart = new Chart(ctx, {
 });
 
 // Pie Chart Example
-var ctx = document.getElementById("myPieChart2");
-var myPieChart = new Chart(ctx, {
+var ctx2 = document.getElementById("myPieChart2");
+var myPieChart2 = new Chart(ctx2, {
   type: 'doughnut',
   data: {
-    labels: ["생산", "Referral", "Social"],
+    labels: ["생산", "유틸리티", "사무", "기타"],
     datasets: [{
-      data: [55, 30, 15],
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+      data: [45, 12, 13, 20],
+      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e'],
+      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', '#f6c23e'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },
   options: {
+    title: {
+      display: true,
+      text: '총 에너지비용'
+    },
     maintainAspectRatio: false,
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
