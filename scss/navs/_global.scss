@@ -41,7 +41,6 @@
   }
 }
 
-
 .clearfix {
 
   .pull-left {
@@ -57,4 +56,39 @@
     display: block;
     clear: both;
   }
+}
+
+/* tabs customize */
+.nav-tabs {
+
+  .nav-item {
+
+    &.show,
+    &.active {
+      .nav-link {
+        background-color: #f8f9fc;
+      }
+    }
+
+    & + .nav-item {
+      margin-left: 5px;
+    }
+
+    
+
+  }
+
+  .nav-link {
+    background: #fff;
+    border-color: #dddfeb #dddfeb #fff;
+  }
+}
+
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fc;
+}
+
+.tab-content {
+  margin-top: 20px
 }
