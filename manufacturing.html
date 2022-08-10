@@ -74,109 +74,205 @@
             <!-- 에너지 영역 -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-              <!-- <p>Date: <input type="text" id="datepicker"></p> -->
-
               <div class="row">
-                <div class="col-xl-7">
+                <div class="col-xl-12">
                   <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">생산 설비</h6>
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart2"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div> -->
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">생산공정명</th>
+                            <th scope="col">설비명</th>
+                            <th scope="col">규격</th>
+                            <th scope="col">에너지 용량</th>
+                            <th scope="col">에너지원</th>
+                            <th scope="col">설비번호</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">조형</th>
+                            <td>수직조형기</td>
+                            <td>50HP / 37kWx4p</td>
+                            <td>90 kW</td>
+                            <td>전기</td>
+                            <td>BC-VM-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" rowspan="4">사처리</th>
+                            <td>샌드믹서</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>샌드쿨러</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>벨트 컨베이어</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>버켓 엘리베이터</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">용해</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">용해</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">용해</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">용해</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">용해</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                  </div>
-                </div>
-
-                <!-- 설정기간 현황 -->
-                <div class="col-xl-5">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 부하별 전력사용량</h6>
-                    </div>
-                    <div class="card-body" style="text-align: center;">
-                      <img src="./img/Screenshot_176.png" style="height: 320px;">
-                  </div>
                   </div>
                 </div>
               </div>
 
               <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-12">
                   <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지사용량과 역률</h6>
+                      <h6 class="m-0 font-weight-bold text-primary">유틸리티</h6>
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
-                      <div class="chart-bar">
-                          <canvas id="myBarChart"></canvas>
-                      </div>
-                  </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지 및 엑서지 효율</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
-                      <div class="chart-bar">
-                          <canvas id="myBarChart2"></canvas>
-                      </div>
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">생산공정명</th>
+                            <th scope="col">설비명</th>
+                            <th scope="col">규격</th>
+                            <th scope="col">에너지 용량</th>
+                            <th scope="col">에너지원</th>
+                            <th scope="col">설비번호</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" rowspan="3">공기압축</th>
+                            <td>샌드믹서</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>샌드쿨러</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>벨트 컨베이어</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" rowspan="6">집진</th>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>
+                          <tr>
+                            <td>유도 전기로(2ton)</td>
+                            <td>1,500kW dual trak / 500~700Hz</td>
+                            <td>1,500 kW</td>
+                            <td>전기</td>
+                            <td>BC-EF-01</td>
+                          </tr>                          
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..3.</div>
             <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">..4.</div>
