@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>EES MP</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <!-- treeview -->
+  <link rel="stylesheet" href="vendor/treeview/jquery.treeview.css" />
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div data-include="./include/sidebar.html"><span hidden>사이드 바</span></div>
+
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- topnav -->
+        <div data-include="./include/topnav.html"><span hidden>상단 바</span></div>
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+          
+          <h2 class="content-title">에너지</h2>
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true">공정계통</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">물리분석</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">공정손실</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product-tab" data-toggle="tab" data-target="#product" type="button"
+                role="tab" aria-controls="product" aria-selected="false">절감방안</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product2-tab" data-toggle="tab" data-target="#product2" type="button"
+                role="tab" aria-controls="product2" aria-selected="false">부하관리</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product3-tab" data-toggle="tab" data-target="#product3" type="button"
+                role="tab" aria-controls="product3" aria-selected="false">에너지목표</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product4-tab" data-toggle="tab" data-target="#product4" type="button"
+                role="tab" aria-controls="product4" aria-selected="false">eKPI</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product5-tab" data-toggle="tab" data-target="#product5" type="button"
+                role="tab" aria-controls="product5" aria-selected="false">원단위</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product6-tab" data-toggle="tab" data-target="#product6" type="button"
+                role="tab" aria-controls="product6" aria-selected="false">관제점</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="product7-tab" data-toggle="tab" data-target="#product7" type="button"
+                role="tab" aria-controls="product7" aria-selected="false">정합성</button>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-xl-1">
+              <!-- <div data-include="./include/treeview.html"><span hidden>트리 뷰</span></div> -->
+              <div class="wrap-treeview mt-4">
+                사업장
+                <ul id="gray" class="treeview-gray">
+                  <li>
+                    <span>생산공정</span>
+                    <ul>
+                      <li class="closed">
+                        <span>용해공정</span>
+                        <ul>
+                          <li>용해로#1</li>
+                          <li>용해로#2</li>
+                          <li>용해로#3</li>
+                          <li>크레인#2</li>
+                          <li>래들#1</li>
+                        </ul>
+                      </li>
+                      <li class="closed">
+                        <span>조형공정</span>
+                        <ul>
+                          <li>메인부</li>
+                          <li>공급벨트</li>
+                          <li>용해로#3</li>
+                          <li>크레인#2</li>
+                          <li>래들#1</li>
+                        </ul>
+                      </li>
+                      <li class="closed">
+                        <span>사처리공정</span>
+                        <ul>
+                          <li>RCS</li>
+                          <li>샌드쿨러</li>
+                          <li>샌드빈</li>
+                          <li>믹서기</li>
+                          <li>리프터</li>
+                        </ul>
+                      </li>
+                      <li class="closed">
+                        <span>탈형공정</span>
+                        <ul>
+                          <li>퀼른</li>
+                        </ul>
+                      </li>    
+                      <li class="closed">
+                        <span>후처리공정</span>
+                        <ul>
+                          <li>쇼트#1</li>
+                          <li>쇼트#2</li>
+                          <li>그라인딩</li>
+                        </ul>
+                      </li>                                          
+                    </ul>
+                  </li>
+                  <li>
+                    <span>유틸리티</span>
+                    <ul>
+                      <li class="closed">
+                        <span>압축공기</span>
+                        <ul>
+                          <li>조형공급</li>
+                          <li>사처리공급</li>
+                          <li>탈형공급</li>
+                          <li>쇼트공급</li>
+                          <li>집진기공급</li>
+                        </ul>
+                      </li>
+                      <li class="closed">
+                        <span>집진기</span>
+                        <ul>
+                          <li>용해집진</li>
+                          <li>조형집진</li>
+                          <li>사처리집진</li>
+                          <li>탈형집진</li>
+                          <li>쇼트집진</li>
+                        </ul>
+                      </li>                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-11">
+              <div class="tab-content" id="myTabContent">
+                <!--종합 영역 -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  
+                  공정계통
+                </div>
+                <!-- 에너지 영역 -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    
+                  <!-- <p>Date: <input type="text" id="datepicker"></p> -->
+    
+                  <div class="row">
+                    <div class="col-xl-7">
+                      <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                          <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart"></canvas>
+                              </div>
+                              <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-primary"></i> 생산
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-success"></i> 유틸리티
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-info"></i> 사무
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-warning"></i> 기타
+                                </span>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="chart-pie pt-4 pb-2">
+                                <canvas id="myPieChart2"></canvas>
+                              </div>
+                              <div class="mt-4 text-center small">
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-primary"></i> 생산
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-success"></i> 유틸리티
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-info"></i> 사무
+                                </span>
+                                <span class="mr-2">
+                                  <i class="fas fa-circle text-warning"></i> 기타
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+    
+                          <!-- <div class="chart-area">
+                        <canvas id="myAreaChart"></canvas>
+                      </div> -->
+                        </div>
+                      </div>
+                    </div>
+    
+                    <!-- 설정기간 현황 -->
+                    <div class="col-xl-5">
+                      <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                          <h6 class="m-0 font-weight-bold text-primary">설정기간 부하별 전력사용량</h6>
+                        </div>
+                        <div class="card-body" style="text-align: center;">
+                          <img src="./img/Screenshot_176.png" style="height: 320px;">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                          <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지사용량과 역률</h6>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                          <div class="chart-bar">
+                              <canvas id="myBarChart"></canvas>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                          <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지 및 엑서지 효율</h6>
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body">
+                          <div class="chart-bar">
+                              <canvas id="myBarChart2"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..3.</div>
+                <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">..4.</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white" data-include="./include/footer.html"></footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- include -->
+  <script src="js/include.min.js" defer></script>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
+
+  <!-- treeview -->
+  <script src="vendor/treeview/jquery.cookie.js"></script>
+  <script src="vendor/treeview/jquery.treeview.js"></script>
+
+  <script>
+
+    $(function() {
+      // fourth example
+      $("#gray").treeview({
+        control: "#treecontrol",
+        persist: "cookie",
+        cookieId: "treeview-black"
+      });
+    })
+    
+  </script>
+</body>
+
+</html>

@@ -113,3 +113,19 @@
 
   }
 }
+
+.content-title {
+  position: absolute; 
+  top: 20px; 
+  font-size: 26px; 
+  color: #333
+}
+
+/* treeview */
+.wrap-treeview {
+  font-size: 12px;
+
+  .treeview ul {
+    background-color: transparent;
+  }
+}
