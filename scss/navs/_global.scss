@@ -130,6 +130,11 @@
   }
 }
 
+.table.align-middle th {
+  background-color: #fafafa;
+}
+
+
 .table.align-middle th,
 .table.align-middle td {
   vertical-align: middle;
@@ -137,4 +142,14 @@
 .table.align-middle th p,
 .table.align-middle td p {
   margin-bottom: 0;
+}
+
+.card-body {
+  &.is-scrolled {
+    overflow: auto;
+  }
+}
+
+.text-during {
+  font-size: 12px;
 }

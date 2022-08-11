@@ -69,13 +69,106 @@
           <div class="tab-content " id="myTabContent">
             <!--종합 영역 -->
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              종합
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">3D 조감도</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body text-center">
+                      <img src="./img/Screenshot_2.png" style="height: 320px;">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 설정기간 현황 -->
+                <div class="col-xl-7">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">실시간 감시</h6>
+                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
+                    </div>
+                    <div class="card-body is-scrolled" style="height: 360px">
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th scope="row">제품 생산량</th>
+                            <td>13,568</td>
+                            <td>KG</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" rowspan="3">총 에너지 사용량</th>
+                            <td>470,53</td>
+                            <td>TOE</td>
+                          </tr>
+                          <tr>
+                            <td><strong>전력</strong> : 5,914,151</td>
+                            <td>kWh</td>
+                          </tr>
+                          <tr>
+                            <td><strong>LNG</strong> : 32,521</td>
+                            <td>Nm<sup>3</sup></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">총 에너지비용</th>
+                            <td>196,830</td>
+                            <td>천원</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">에너지원단위</th>
+                            <td>28.84</td>
+                            <td>kg/TOE</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" rowspan="3">온실가스 배출량</th>
+                            <td>959.88</td>
+                            <td>tCO<sub>2</sub></td>
+                          </tr>
+                          <tr>
+                            <td><strong>간접 배출원</strong> : 909.56</td>
+                            <td>tCO<sub>2</sub></td>
+                          </tr>
+                          <tr>
+                            <td><strong>직접 배출원</strong> : 50.32</td>
+                            <td>tCO<sub>2</sub></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+              
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">전력 흐름도</h6>
+                    </div>
+                    <div class="card-body is-scrolled" style="height: 500px">
+                      <img src="./img/img1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">생키 도식도</h6>
+                    </div>
+                    <div class="card-body text-center mb-4 mt-4">
+                      <img src="./img/img2.png" style="max-width: 100%" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>  
+
             </div>
             <!-- 에너지 영역 -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-              <!-- <p>Date: <input type="text" id="datepicker"></p> -->
-
               <div class="row">
                 <div class="col-xl-7">
                   <div class="card shadow mb-4">
@@ -125,10 +218,6 @@
                           </div>
                         </div>
                       </div>
-
-                      <!-- <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div> -->
                     </div>
                   </div>
                 </div>
@@ -178,7 +267,159 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..3.</div>
+
+            <!-- 온실가스 -->
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="row">
+                <div class="col-xl-6">
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="chart-pie pt-4 pb-2">
+                            <canvas id="myPieChart3"></canvas>
+                          </div>
+                          <div class="mt-4 text-center small">
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-primary"></i> 생산
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-success"></i> 유틸리티
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-info"></i> 사무
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-warning"></i> 기타
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="chart-pie pt-4 pb-2">
+                            <canvas id="myPieChart4"></canvas>
+                          </div>
+                          <div class="mt-4 text-center small">
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-primary"></i> 생산
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-success"></i> 유틸리티
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-info"></i> 사무
+                            </span>
+                            <span class="mr-2">
+                              <i class="fas fa-circle text-warning"></i> 기타
+                            </span>
+                          </div>
+                        </div>
+                      </div>  
+                      <hr>
+                      <div class="row">
+                        <div class="col-xl-6 text-center">
+                          간접 배출원 : 909.56 tCO<sub>2</sub>-eq
+                        </div>
+                        <div class="col-xl-6 text-center">
+                          직접 배출원 : 50.32 tCO<sub>2</sub>-eq
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">간접 및 직접 배출원의 단위공정별 온실가스 배출량</h6>
+                    </div>
+                    <div class="card-body">
+                      <div class="chart-bar">
+                        <canvas id="myBarChart5"></canvas>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-6">
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">KRX 배출권시장 정보</h6>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        <strong>배출권 시세조회</strong>
+                      </p>                      
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">날짜</th>
+                            <th scope="col">종가</th>
+                            <th scope="col">대비</th>
+                            <th scope="col">등락률(%)</th>
+                            <th scope="col">거래량(톤)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">2022/08/04</th>
+                            <td>16,150</td>
+                            <td>1,450</td>
+                            <td>9.86</td>
+                            <td>45,697</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2022/08/04</th>
+                            <td>16,150</td>
+                            <td>1,450</td>
+                            <td>9.86</td>
+                            <td>45,697</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2022/08/04</th>
+                            <td>16,150</td>
+                            <td>1,450</td>
+                            <td>9.86</td>
+                            <td>45,697</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2022/08/04</th>
+                            <td>16,150</td>
+                            <td>1,450</td>
+                            <td>9.86</td>
+                            <td>45,697</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2022/08/04</th>
+                            <td>16,150</td>
+                            <td>1,450</td>
+                            <td>9.86</td>
+                            <td>45,697</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <hr>
+
+                      <div>
+                        <canvas id="myChart"></canvas>
+                      </div>
+
+                  </div>
+                  </div>
+
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">산업부문 탄소배출 수준진단</h6>
+                    </div>
+                    <div class="card-body">
+                      <img src="./img/img3.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            </div>
             <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">..4.</div>
           </div>
 
@@ -243,6 +484,7 @@
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
   <script src="js/demo/chart-bar-demo.js"></script>
+  <script src="js/demo/chart-mixed.js"></script>
 
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
   <script>
