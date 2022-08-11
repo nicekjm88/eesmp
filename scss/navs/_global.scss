@@ -134,6 +134,10 @@
   background-color: #fafafa;
 }
 
+.table.table-sm th,
+.table.table-sm td {
+  font-size: 12px;
+}
 
 .table.align-middle th,
 .table.align-middle td {
@@ -153,3 +157,4 @@
 .text-during {
   font-size: 12px;
 }
+
