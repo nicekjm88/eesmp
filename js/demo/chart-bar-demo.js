@@ -27,6 +27,89 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
+var ctx6 = document.getElementById("myBarChart6");
+var myBarChart6 = new Chart(ctx6, {
+  type: 'bar',
+  data: {
+    labels: ["Bracket", "Flange", "Elbow", "Housing", "Bearing cap", "Shaft", "Cone inlet", "C/A case", "Base plate", "Inner ring"],
+    datasets: [{
+      label: "En. Ex",
+      backgroundColor: "#4e73df",
+      hoverBackgroundColor: "#4e73df",
+      borderColor: "#4e73df",
+      data: [14, 13, 10, 6, 12, 17, 10, 6, 4, 8],
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+      padding: {
+        left: 10,
+        right: 25,
+        top: 25,
+        bottom: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'month'
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false
+        },
+        ticks: {
+          maxTicksLimit: 9
+        },
+        maxBarThickness: 25,
+      }],
+      yAxes: [{
+        ticks: {
+          min: 0,
+          max: 10,
+          maxTicksLimit: 10,
+          padding: 10,
+          // Include a dollar sign in the ticks
+          callback: function(value, index, values) {
+            return number_format(value);
+          }
+        },
+        gridLines: {
+          color: "rgb(234, 236, 244)",
+          zeroLineColor: "rgb(234, 236, 244)",
+          drawBorder: false,
+          borderDash: [2],
+          zeroLineBorderDash: [2]
+        }
+      }],
+    },
+    legend: {
+      display: false
+    },
+    tooltips: {
+      titleMarginBottom: 10,
+      titleFontColor: '#6e707e',
+      titleFontSize: 14,
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+      callbacks: {
+        label: function(tooltipItem, chart) {
+          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+          return datasetLabel + ' : ' + number_format(tooltipItem.yLabel);
+        }
+      }
+    },
+  }
+});
+
+
 var ctx5 = document.getElementById("myBarChart5");
 var myBarChart5 = new Chart(ctx5, {
   type: 'bar',
