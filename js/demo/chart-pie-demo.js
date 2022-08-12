@@ -145,3 +145,75 @@ var myPieChart4 = new Chart(ctx4, {
     cutoutPercentage: 80,
   },
 });
+
+// Pie Chart Example
+var ctx5 = document.getElementById("myPieChart5");
+var myPieChart5 = new Chart(ctx5, {
+  type: 'doughnut',
+  data: {
+    labels: ["Bracket", "Flange", "Elbow", "Housing", "Bearing cap", "Shaft", "Cone inlet", "C/A case", "Base plate", "Inner ring"],
+    datasets: [{
+      data: [15, 12, 10, 7, 12, 17, 10, 5, 3, 8],
+      backgroundColor: ['#4472c4', '#ed7d31', '#a5a5a5', '#ffc000', '#5b9bd5', '#70ad47', '#264478', '#9e480e', '#636363', '#997300'],
+      hoverBackgroundColor: ['#4472c4', '#ed7d31', '#a5a5a5', '#ffc000', '#5b9bd5', '#70ad47', '#264478', '#9e480e', '#636363', '#997300'],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  },
+  options: {
+    title: {
+      display: true,
+      text: '총 용해량'
+    },
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+    },
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+  },
+});
+
+// Pie Chart Example
+var ctx6 = document.getElementById("myPieChart6");
+var myPieChart6 = new Chart(ctx6, {
+  type: 'doughnut',
+  data: {
+    labels: ["Bracket", "Flange", "Elbow", "Housing", "Bearing cap", "Shaft", "Cone inlet", "C/A case", "Base plate", "Inner ring"],
+    datasets: [{
+      data: [15, 12, 10, 7, 12, 17, 10, 5, 3, 8],
+      backgroundColor: ['#4472c4', '#ed7d31', '#a5a5a5', '#ffc000', '#5b9bd5', '#70ad47', '#264478', '#9e480e', '#636363', '#997300'],
+      hoverBackgroundColor: ['#4472c4', '#ed7d31', '#a5a5a5', '#ffc000', '#5b9bd5', '#70ad47', '#264478', '#9e480e', '#636363', '#997300'],
+      hoverBorderColor: "rgba(234, 236, 244, 1)",
+    }],
+  },
+  options: {
+    title: {
+      display: true,
+      text: '총 제품생산량'
+    },
+    maintainAspectRatio: false,
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      caretPadding: 10,
+    },
+    legend: {
+      display: false
+    },
+    cutoutPercentage: 80,
+  },
+});
