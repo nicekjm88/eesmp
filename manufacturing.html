@@ -69,36 +69,213 @@
             </li>
           </ul>
           <div class="tab-content " id="myTabContent">
-            <!--종합 영역 -->
+            <!--공정 영역 -->
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="row">
                 <div class="col-xl-12">
                   <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">공정</h6>
                     </div>
-                    <!-- Card Body -->
                     <div class="card-body text-center">
-                      <img src="./img/Screenshot_177.png" />
-                      
+                      <img src="./img/imgmap.png" usemap="#image-map">
+
+                      <map name="image-map">
+                        <area data-toggle="modal" data-target="#process1" target="" alt=""
+                          title="집진 (D-101)&#10;단위공정(용해, 주입,&#10;사처 리 등)에서&#10;발생하는 비산성 먼지를&#10;제거하기 위한 장치" href=""
+                          coords="347,4,41,134" shape="rect">
+                        <area data-toggle="modal" data-target="#process2" target="" alt=""
+                          title="공기압축 (A-101)&#10;단위공정(쇼트, 믹서기,&#10;SBC, AMC 등) 또는&#10;집진기에 사용하기 위한&#10;압축공기를 생산하는&#10;장치"
+                          href="" coords="378,0,696,129" shape="rect">
+                        <area data-toggle="modal" data-target="#process3" target="" alt=""
+                          title="탈형공정 (C-102)&#10;회전하는 퀼른에서&#10;주형틀, 제품, 탕도,&#10;압탕을 분리하는 공정" href=""
+                          coords="164,140,331,270" shape="rect">
+                        <area data-toggle="modal" data-target="#process4" target="" alt=""
+                          title="조형공정 (M-101)&#10;주물사(벤토나이트,&#10;씨콜, 신사 등)를&#10;이용하여 주형 틀을&#10;만드는 공정" href=""
+                          coords="499,136,667,269" shape="rect">
+                        <area data-toggle="modal" data-target="#process5" target="" alt=""
+                          title="쇼트공정 (S-101)&#10;숏 또는 그릿이라고&#10;하는 금속·비금속의&#10;미세한 입자를 주물에&#10;투사하여 표면에 잔류한&#10;주물사를 제거하는 공정"
+                          href="" coords="3,279,158,398,54,330" shape="rect">
+                        <area data-toggle="modal" data-target="#process6" target="" alt=""
+                          title="연마공정 (B-101)&#10;고속으로 회전하는&#10;연마벨트를 이용하여&#10;제품의 표면을 깨끗하게&#10;정리하는 공정" href=""
+                          coords="172,276,333,397" shape="rect">
+                        <area data-toggle="modal" data-target="#process7" target="" alt=""
+                          title="최종검사&#10;완성된 제품을 외관&#10;검사하여 불량과 양품을&#10;분류하는 공정" href="" coords="395,344,341,315"
+                          shape="rect">
+                        <area data-toggle="modal" data-target="#process8" target="" alt=""
+                          title="용해공정 (F-101)&#10;원자재(선철,고철,회수철&#10;등)을 전기로에&#10;장입하여 1,400~1,650도의&#10;쇳물을 만드는 공정"
+                          href="" coords="495,274,724,411" shape="rect">
+                        <area data-toggle="modal" data-target="#process9" target="" alt=""
+                          title="사처리공정 (T-101)&#10;주형틀을 만들기 위한&#10;주물사(회수사, 신사,&#10;벤토 나이트, 씨콜)를&#10;만드는 공정으로&#10;목표함수율은 4w.t%"
+                          href="" coords="671,135,821,262" shape="rect">
+                      </map>
+
+                      <div class="modal fade" id="process1" tabindex="-1" role="dialog" aria-labelledby="process1Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process1Label">집진 (D-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              단위공정(용해, 주입, 사처 리 등)에서 발생하는 비산성 먼지를 제거하기 위한 장치
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process2" tabindex="-1" role="dialog" aria-labelledby="process2Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process2Label">공기압축 (A-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              단위공정(쇼트, 믹서기, SBC, AMC 등) 또는 집진기에 사용하기 위한 압축공기를 생산하는 장치
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process3" tabindex="-1" role="dialog" aria-labelledby="process3Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process3Label">탈형공정 (C-102)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              회전하는 퀼른에서&#10;주형틀, 제품, 탕도,&#10;압탕을 분리하는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process4" tabindex="-1" role="dialog" aria-labelledby="process4Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process4Label">조형공정 (M-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              주물사(벤토나이트,&#10;씨콜, 신사 등)를&#10;이용하여 주형 틀을&#10;만드는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process5" tabindex="-1" role="dialog" aria-labelledby="process5Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process5Label">쇼트공정 (S-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              숏 또는 그릿이라고&#10;하는 금속·비금속의&#10;미세한 입자를 주물에&#10;투사하여 표면에 잔류한&#10;주물사를 제거하는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process6" tabindex="-1" role="dialog" aria-labelledby="process6Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process6Label">연마공정 (B-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              고속으로 회전하는&#10;연마벨트를 이용하여&#10;제품의 표면을 깨끗하게&#10;정리하는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process7" tabindex="-1" role="dialog" aria-labelledby="process7Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process7Label">최종검사</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              완성된 제품을 외관&#10;검사하여 불량과 양품을&#10;분류하는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process8" tabindex="-1" role="dialog" aria-labelledby="process8Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process8Label">용해공정 (F-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              원자재(선철,고철,회수철&#10;등)을 전기로에&#10;장입하여 1,400~1,650도의&#10;쇳물을 만드는 공정
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="modal fade" id="process9" tabindex="-1" role="dialog" aria-labelledby="process9Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process9Label">사처리공정 (T-101)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              주형틀을 만들기 위한&#10;주물사(회수사, 신사,&#10;벤토 나이트, 씨콜)를&#10;만드는 공정으로&#10;목표함수율은 4w.t%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- 에너지 영역 -->
+            <!-- 설비 영역 -->
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
               <div class="row">
                 <div class="col-xl-12">
                   <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">생산 설비</h6>
                       <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                     </div>
-                    <!-- Card Body -->
                     <div class="card-body">
                       <table class="table table-bordered text-center align-middle">
                         <thead>
@@ -126,7 +303,183 @@
                         <tbody>
                           <tr>
                             <td>
-                              <p>용해</p>
+                              <p data-toggle="modal" data-target="#exampleModal" style="cursor:pointer">용해</p>
+
+                              <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">용해 상세 정보</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                        <div class="col-xl-6">
+                                          <img src="./img/younghae.png" alt="">
+                                        </div>
+                                        <div class="col-xl-6">
+                                          <table class="table table-sm">
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  <p><strong><span>Item</span></strong></p>
+                                                </td>
+                                                <td>
+                                                  <p><strong><span>QTY</span></strong></p>
+                                                </td>
+                                                <td>
+                                                  <p><strong><span>Description</span></strong></p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>A</p>
+                                                </td>
+                                                <td>
+                                                  <p>3 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Refractory ***** 33&rdquo;x47&rdquo;</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>B</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Top ref. ******* 4,000# w2</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>C</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Bot. ref. casting 4,000# w2</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>D</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Leak detector bolt assy.</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>E</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Steel melt-out form</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>F</p>
+                                                </td>
+                                                <td>
+                                                  <p>7 CuFt</p>
+                                                </td>
+                                                <td>
+                                                  <p>Refractory lining</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>G</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>4,000 Lb. (2,000kg) coil</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>H</p>
+                                                </td>
+                                                <td>
+                                                  <p>75 Lb.</p>
+                                                </td>
+                                                <td>
+                                                  <p>Inductocoat 35AF</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>I</p>
+                                                </td>
+                                                <td>
+                                                  <p>150 Lb.</p>
+                                                </td>
+                                                <td>
+                                                  <p>*** Mat&rsquo;l seal 5</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>J</p>
+                                                </td>
+                                                <td>
+                                                  <p>1,600 Si</p>
+                                                </td>
+                                                <td>
+                                                  <p>****** 1/32&rdquo;x33 1/&rdquo;I.D.x43&rdquo;O.D.</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>K</p>
+                                                </td>
+                                                <td>
+                                                  <p>1,250 Si</p>
+                                                </td>
+                                                <td>
+                                                  <p>Jm960 1/32&rdquo;x33&nbsp;&frac12;&rdquo;I.D.x43&rdquo;O.D.</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>L</p>
+                                                </td>
+                                                <td>
+                                                  <p>1 ea</p>
+                                                </td>
+                                                <td>
+                                                  <p>Leak detector wire assy.</p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    <!-- <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> -->
+                                  </div>
+                                </div>
+                              </div>
                             </td>
                             <td>
                               <p>유도 전기로(2ton)</p>
@@ -597,16 +950,15 @@
                 </div>
               </div>
             </div>
+            <!-- 태그 영역 -->
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
               <div class="row">
                 <div class="col-xl-12">
                   <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">태그</h6>
                       <div>기준시간 2022.10.01 ~ 2022.11.30</div>
                     </div>
-                    <!-- Card Body -->
                     <div class="card-body">
                       <table class="table table-bordered text-center align-middle">
                         <thead>
@@ -1549,32 +1901,13 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- include -->
   <script src="js/include.min.js" defer></script>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -1593,6 +1926,7 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
   <script>
     $(function () {
+
       $("#datepicker").datepicker({
         showOn: "button",
         buttonImage: "images/calendar.gif",
