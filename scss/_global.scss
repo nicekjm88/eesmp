@@ -250,6 +250,10 @@ caption {
 .table.vertical-th td {
   vertical-align: middle;
 }
+.table.vertical-th form,
+.table.vertical-th .form-group {
+  display: inline-block;
+}
 .table.vertical-th .form-group {
   margin-bottom: 0;
 }
