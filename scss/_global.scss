@@ -97,6 +97,8 @@ caption {
   .nav-link {
     background: #fff;
     border-color: #dddfeb #dddfeb #fff;
+    color: #999;
+    padding: 0.5rem 2.5rem;
   }
 }
 
@@ -104,6 +106,8 @@ caption {
 .nav-tabs .nav-link.active {
   background-color: #f8f9fc;
   border-color: #dddfeb #dddfeb #f8f9fc;
+  color: #08347f;
+  font-weight: 700;
 }
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {

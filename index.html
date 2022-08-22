@@ -19,10 +19,11 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
-  <!-- datePicker -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -79,7 +80,30 @@
                     </div>
                     <!-- Card Body -->
                     <div class="card-body text-center">
-                      <img src="./img/Screenshot_2.png" style="height: 320px;">
+                      <a href="" data-toggle="modal" data-target="#process1">
+                        <img src="./img/Screenshot_2.jpg" style="max-width: 100%">
+                      </a>
+
+                      <div class="modal fade" id="process1" tabindex="-1" role="dialog" aria-labelledby="process1Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="process1Label">3D 조감도 영상</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-left">
+                              <iframe width="100%" height="431" src="https://www.youtube.com/embed/-0DJHJ1q3GQ"
+                                title="공장 신축 3D 시뮬레이션 720P" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -92,7 +116,7 @@
                       <h6 class="m-0 font-weight-bold text-primary">실시간 감시</h6>
                       <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                     </div>
-                    <div class="card-body is-scrolled" style="height: 360px">
+                    <div class="card-body is-scrolled" style="height: 574px">
                       <table class="table table-bordered vertical-th">
                         <tbody>
                           <tr>
@@ -201,24 +225,24 @@
               </div>
 
               <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-5">
                   <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">전력 흐름도</h6>
                     </div>
-                    <div class="card-body is-scrolled" style="height: 500px">
-                      <img src="./img/img1.png" alt="">
+                    <div class="card-body text-center is-scrolled" style="height: 482px">
+                      <img src="./img/img1.jpg" style="width: 75%" alt="">
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-7">
                   <div class="card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">생키 도식도</h6>
                     </div>
                     <div class="card-body text-center mb-4 mt-4">
-                      <img src="./img/img2.png" style="max-width: 100%" alt="">
+                      <img src="./img/img2.jpg" style="max-width: 75%" alt="">
                     </div>
                   </div>
                 </div>
@@ -288,7 +312,7 @@
                       <h6 class="m-0 font-weight-bold text-primary">설정기간 부하별 전력사용량</h6>
                     </div>
                     <div class="card-body" style="text-align: center;">
-                      <img src="./img/Screenshot_176.png" style="height: 320px;">
+                      <img src="./img/Screenshot_176.jpg" style="height: 320px;">
                     </div>
                   </div>
                 </div>
@@ -471,7 +495,7 @@
                       <h6 class="m-0 font-weight-bold text-primary">산업부문 탄소배출 수준진단</h6>
                     </div>
                     <div class="card-body">
-                      <img src="./img/img3.png" alt="">
+                      <img src="./img/img3.jpg" style="max-width: 100%" alt="">
                     </div>
                   </div>
                 </div>
