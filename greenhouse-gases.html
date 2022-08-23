@@ -28,6 +28,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
 </head>
 
 <body id="page-top">
@@ -7397,9 +7399,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- include -->
-    <script src="js/include.min.js" defer></script>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -7422,8 +7421,11 @@
     <script src="vendor/treeview/jquery.cookie.js"></script>
     <script src="vendor/treeview/jquery.treeview.js"></script>
 
-    <script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
+    <!-- include -->
+    <script src="js/include.min.js" defer></script>
 
+    <script>
         $(function () {
             // fourth example
             $("#gray").treeview({

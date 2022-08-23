@@ -281,3 +281,42 @@ caption {
     }
   }
 }
+
+/* 모달 무비 */
+.modal-content {
+  &.modal-movie {
+    border-radius: 0;
+    border: none;
+
+    background-color: transparent;
+
+    .modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.table-wrap {
+  position: relative;
+
+  select.form-control {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: inherit;
+  }
+
+  caption {
+    .xi-plus {
+      border: 1px solid #ccc;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      text-align: center;
+      line-height: 14px;
+      font-size: 11px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+}

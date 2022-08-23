@@ -25,6 +25,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
 </head>
 
 <body id="page-top">
@@ -87,15 +89,9 @@
                       <div class="modal fade" id="process1" tabindex="-1" role="dialog" aria-labelledby="process1Label"
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="process1Label">3D 조감도 영상</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body text-left">
-                              <iframe width="100%" height="431" src="https://www.youtube.com/embed/-0DJHJ1q3GQ"
+                          <div class="modal-content modal-movie">
+                            <div class="modal-body">
+                              <iframe width="100%" height="450" src="https://www.youtube.com/embed/-0DJHJ1q3GQ"
                                 title="공장 신축 3D 시뮬레이션 720P" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
@@ -257,6 +253,7 @@
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
+                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
@@ -357,6 +354,7 @@
                   <div class="card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
+                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                     </div>
                     <div class="card-body">
                       <div class="row">
@@ -402,10 +400,12 @@
                       <hr>
                       <div class="row">
                         <div class="col-xl-6 text-center">
-                          간접 배출원 : 909.56 tCO<sub>2</sub>-eq
+                          간접 배출원 : <input type="text" style="display: inline-block; width: 90px;" class="form-control"
+                            value="909.56"> tCO<sub>2</sub>-eq
                         </div>
                         <div class="col-xl-6 text-center">
-                          직접 배출원 : 50.32 tCO<sub>2</sub>-eq
+                          직접 배출원 : <input type="text" style="display: inline-block; width: 90px;" class="form-control"
+                            value="50.32"> tCO<sub>2</sub>-eq
                         </div>
                       </div>
                     </div>
@@ -429,64 +429,67 @@
                       <h6 class="m-0 font-weight-bold text-primary">KRX 배출권시장 정보</h6>
                     </div>
                     <div class="card-body">
-                      <p>
-                        <strong>배출권 시세조회</strong>
-                      </p>
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">날짜</th>
-                            <th scope="col">종가</th>
-                            <th scope="col">대비</th>
-                            <th scope="col">등락률(%)</th>
-                            <th scope="col">거래량(톤)</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">2022/08/04</th>
-                            <td>16,150</td>
-                            <td class="red"><i class="xi-caret-up"></i> 1,450</td>
-                            <td>9.86</td>
-                            <td>45,697</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2022/08/04</th>
-                            <td>16,150</td>
-                            <td class="blue"><i class="xi-caret-down"></i> 1,250</td>
-                            <td>9.86</td>
-                            <td>45,697</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2022/08/04</th>
-                            <td>16,150</td>
-                            <td class="blue"><i class="xi-caret-down"></i> 1,750</td>
-                            <td>9.86</td>
-                            <td>45,697</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2022/08/04</th>
-                            <td>16,150</td>
-                            <td class="blue"><i class="xi-caret-down"></i> 900</td>
-                            <td>9.86</td>
-                            <td>45,697</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2022/08/04</th>
-                            <td>16,150</td>
-                            <td class="red"><i class="xi-caret-up"></i> 100</td>
-                            <td>9.86</td>
-                            <td>45,697</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="table-wrap">
+                        <select class="form-control form-control-sm">
+                          <option>KAU-21</option>
+                        </select>
 
+
+                        <table class="table">
+                          <caption>배출권 시세조회 <i class="xi-plus"></i>
+                          </caption>
+                          <thead>
+                            <tr>
+                              <th scope="col">날짜</th>
+                              <th scope="col">종가</th>
+                              <th scope="col">대비</th>
+                              <th scope="col">등락률(%)</th>
+                              <th scope="col">거래량(톤)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">2022/08/04</th>
+                              <td>16,150</td>
+                              <td class="red"><i class="xi-caret-up"></i> 1,450</td>
+                              <td>9.86</td>
+                              <td>45,697</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2022/08/04</th>
+                              <td>16,150</td>
+                              <td class="blue"><i class="xi-caret-down"></i> 1,250</td>
+                              <td>9.86</td>
+                              <td>45,697</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2022/08/04</th>
+                              <td>16,150</td>
+                              <td class="blue"><i class="xi-caret-down"></i> 1,750</td>
+                              <td>9.86</td>
+                              <td>45,697</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2022/08/04</th>
+                              <td>16,150</td>
+                              <td class="blue"><i class="xi-caret-down"></i> 900</td>
+                              <td>9.86</td>
+                              <td>45,697</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2022/08/04</th>
+                              <td>16,150</td>
+                              <td class="red"><i class="xi-caret-up"></i> 100</td>
+                              <td>9.86</td>
+                              <td>45,697</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <hr>
-
                       <div>
                         <canvas id="myChart"></canvas>
                       </div>
-
                     </div>
                   </div>
 
@@ -1056,9 +1059,6 @@
 
   </div>
 
-  <!-- include -->
-  <script src="js/include.min.js"></script>
-
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1079,16 +1079,8 @@
   <script src="js/demo/chart-mixed.js"></script>
 
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
-  <script>
-    $(function () {
-      $("#datepicker").datepicker({
-        showOn: "button",
-        buttonImage: "images/calendar.gif",
-        buttonImageOnly: true,
-        buttonText: "Select date"
-      });
-    });
-  </script>
+  <!-- include -->
+  <script src="js/include.min.js" defer></script>
 </body>
 
 </html>
