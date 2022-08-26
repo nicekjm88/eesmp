@@ -167,11 +167,25 @@ var myBarChart5 = new Chart(ctx5, {
     ],
     datasets: [
       {
-        label: "En. Ex",
+        label: "전체",
+        backgroundColor: "#4e73df",
+        hoverBackgroundColor: "#4e73df",
+        borderColor: "#4e73df",
+        data: [8, 5, 4, 3, 8, 1, 4, 10, 6],
+      },
+      {
+        label: "간접",
         backgroundColor: "#fd7e14",
         hoverBackgroundColor: "#fd7e14",
         borderColor: "#fd7e14",
-        data: [7, 9, 4, 3, 8, 1, 4, 10, 6],
+        data: [7, 4, 4, 3, 4, 1, 6, 4, 4],
+      },
+      {
+        label: "직접",
+        backgroundColor: "#a5a5a5",
+        hoverBackgroundColor: "#a5a5a5",
+        borderColor: "#a5a5a5",
+        data: [2, 1, 0, 0, 0, 0, 0, 0, 0],
       },
     ],
   },
@@ -273,6 +287,13 @@ var myBarChart = new Chart(ctx, {
         borderColor: "#4e73df",
         data: [8, 4, 6, 2, 7, 9, 4, 1, 6],
       },
+      {
+        label: "에너지 역률",
+        backgroundColor: "#fd7e14",
+        hoverBackgroundColor: "#fd7e14",
+        borderColor: "#fd7e14",
+        data: [9, 8, 7, 6, 9, 5, 8, 7, 6],
+      },
     ],
   },
   options: {
@@ -367,10 +388,17 @@ var myBarChart2 = new Chart(ctx2, {
     datasets: [
       {
         label: "En. Ex",
+        backgroundColor: "#4e73df",
+        hoverBackgroundColor: "#4e73df",
+        borderColor: "#4e73df",
+        data: [70, 90, 40, 30, 80, 10, 40, 100, 60],
+      },
+      {
+        label: "En. Ex",
         backgroundColor: "#fd7e14",
         hoverBackgroundColor: "#fd7e14",
         borderColor: "#fd7e14",
-        data: [70, 90, 40, 30, 80, 10, 40, 100, 60],
+        data: [40, 80, 30, 30, 80, 40, 40, 100, 60],
       },
     ],
   },
