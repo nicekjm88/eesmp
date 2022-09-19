@@ -329,3 +329,44 @@ caption {
   border-radius: 5px;
   margin-top: 5px;
 }
+
+.video-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.video-wrap.h200 {
+  height: 200px;
+}
+.video-wrap.h300 {
+  height: 300px;
+}
+.video-wrap.h400 {
+  height: 400px;
+}
+.video-wrap.h500 {
+  height: 500px;
+}
+.video-wrap.h600 {
+  height: 600px;
+}
+.video-wrap.h700 {
+  height: 700px;
+}
+.video-wrap.h1000 {
+  height: 1000px;
+}
+.video-wrap video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hoverimg {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 1600px;
+  margin: 0 auto;
+}

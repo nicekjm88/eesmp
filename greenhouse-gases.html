@@ -168,7 +168,39 @@
                                             <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                                         </div>
                                         <div class="card-body text-center">
-                                            <img src="./img/img04-01.jpg" alt="" style="max-width: 75%">
+                                            <!-- <img src="./img/img04-01.jpg" alt="" style="max-width: 75%"> -->
+                                            <div class="hoverimg">
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-01.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-02.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-03.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-04.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-05.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-06.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-07.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-08.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-09.gif" alt="">
+                                                </div>
+                                                <div class="hoverimg-item">
+                                                    <img src="./img/sub04-01-10.gif" alt="">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card shadow mb-4">
@@ -5805,7 +5837,12 @@
                                             <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
                                         </div>
                                         <div class="card-body">
-                                            <img src="./img/img04-02.jpg" alt="" style="width: 80%; margin-left: 10%">
+                                            <!-- <img src="./img/img04-02.jpg" alt="" style="width: 80%; margin-left: 10%"> -->
+                                            <div class="video-wrap h300">
+                                                <video autoplay muted playsinline style="max-width: 100%; width: 75%;">
+                                                    <source src="./video/sub04-02-01.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
                                             <hr>
                                             <div class="row">
                                                 <div class="col-xl-4">
@@ -6288,7 +6325,12 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="text-center">
-                                                <img src="./img/img04-03.jpg" alt="" style="max-width: 75%;">
+                                                <!-- <img src="./img/img04-03.jpg" alt="" style="max-width: 75%;"> -->
+                                                <div class="video-wrap h500">
+                                                    <video autoplay muted playsinline style="max-width: 100%;">
+                                                        <source src="./video/sub04-03-01.mp4" type="video/mp4">
+                                                    </video>
+                                                </div>
                                             </div>
                                             <hr>
                                             <div class="row">
@@ -7427,6 +7469,19 @@
 
     <script>
         $(function () {
+
+            $('.hoverimg-item img').hover(function (e) {
+                var srcAddr = $(this).attr('src').substr(0, 17);
+
+                if (e.type === 'mouseenter') {
+                    $(this).attr('src', srcAddr + '_ov.gif');
+                } else if (e.type === 'mouseleave') {
+                    var originSrc = $(this).attr('src').slice(0, -7);
+                    console.log(originSrc)
+                    $(this).attr('src', originSrc + '.gif');
+                }
+            })
+
             // fourth example
             $("#gray").treeview({
                 control: "#treecontrol",
