@@ -10146,6 +10146,7 @@ caption {
   align-content: center;
   justify-content: center;
   width: 1280px;
+  transform:scale(0.8);
   margin: 0 auto;
 }
 
