@@ -20,1171 +20,205 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-
 </head>
 
-<body id="page-top">
+<body class="fixed">
+  <div class="intro-wrap">
 
-  <!-- Page Wrapper -->
-  <div id="wrapper">
+    <h1 class="logo2">
+      <a href="main.html">
+        <img src="img/logo2.png" alt="">
+      </a>
+    </h1>
 
-    <!-- Sidebar -->
-    <div data-include="./include/sidebar.html"><span hidden>사이드 바</span></div>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- topnav -->
-        <div data-include="./include/topnav.html"><span hidden>상단 바</span></div>
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-
-          <h2 class="content-title">메인</h2>
-
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button"
-                role="tab" aria-controls="home" aria-selected="true">종합</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button"
-                role="tab" aria-controls="profile" aria-selected="false">에너지</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-toggle="tab" data-target="#contact" type="button"
-                role="tab" aria-controls="contact" aria-selected="false">온실가스</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="product-tab" data-toggle="tab" data-target="#product" type="button"
-                role="tab" aria-controls="contact" aria-selected="false">생산</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <!--종합 영역 -->
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row">
-                <div class="col-xl-7">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">3D 조감도</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body text-center">
-                      <a href="" data-toggle="modal" data-target="#process1">
-                        <img src="./img/Screenshot_2.jpg" style="max-width: 100%; height: 534px">
-                      </a>
-
-                      <div class="modal fade" id="process1" tabindex="-1" role="dialog" aria-labelledby="process1Label"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                          <div class="modal-content modal-movie">
-                            <div class="modal-body">
-                              <iframe width="100%" height="450" src="https://www.youtube.com/embed/-0DJHJ1q3GQ"
-                                title="공장 신축 3D 시뮬레이션 720P" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 설정기간 현황 -->
-                <div class="col-xl-5">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">실시간 감시</h6>
-                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
-                    </div>
-                    <div class="card-body is-scrolled" style="height: 574px">
-                      <table class="table table-bordered vertical-th">
-                        <tbody>
-                          <tr>
-                            <th scope="row">제품 생산량</th>
-                            <td class="text-right">
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="13,568">
-                                </div>
-                              </form>
-                            </td>
-                            <td>KG</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" rowspan="3">총 에너지 사용량</th>
-                            <td class="text-right">
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="470,53">
-                                </div>
-                              </form>
-                            </td>
-                            <td>TOE</td>
-                          </tr>
-                          <tr>
-                            <td class="text-right">
-                              <strong>전력</strong> :
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="5,914,151">
-                                </div>
-                              </form>
-
-                            </td>
-                            <td>kWh</td>
-                          </tr>
-                          <tr>
-                            <td class="text-right">
-                              <strong>LNG</strong> :
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="32,521">
-                                </div>
-                              </form>
-                            </td>
-                            <td>Nm<sup>3</sup></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">총 에너지비용</th>
-                            <td class="text-right">
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="196,830">
-                                </div>
-                              </form>
-                            </td>
-                            <td>천원</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">에너지원단위</th>
-                            <td class="text-right">
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="28.84">
-                                </div>
-                              </form>
-                            </td>
-                            <td>kg/TOE</td>
-                          </tr>
-                          <tr>
-                            <th scope="row" rowspan="3">온실가스 배출량</th>
-                            <td class="text-right">
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="959.88">
-                                </div>
-                              </form>
-                            </td>
-                            <td>tCO<sub>2</sub></td>
-                          </tr>
-                          <tr>
-                            <td class="text-right"><strong>간접 배출원</strong> :
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="909.56">
-                                </div>
-                              </form>
-                            </td>
-                            <td>tCO<sub>2</sub></td>
-                          </tr>
-                          <tr>
-                            <td class="text-right"><strong>직접 배출원</strong> :
-                              <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control text-right" id="" value="50.32">
-                                </div>
-                              </form>
-                            </td>
-                            <td>tCO<sub>2</sub></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">전력 흐름도</h6>
-                    </div>
-                    <div class="card-body text-center is-scrolled" style="height: 482px">
-                      <img src="./img/img1.jpg" style="width: 75%" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-7">
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">생키 도식도</h6>
-                    </div>
-                    <div class="card-body text-center mb-4 mt-4">
-                      <img src="./img/img2.jpg" style="max-width: 75%; height: 394px" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <!-- 에너지 영역 -->
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <div class="row">
-                <div class="col-xl-7">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
-                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-12 text-center">
-                          <video autoplay muted playsinline style="max-width: 100%">
-                            <source src="./video/sub01-02-01.mp4" type="video/mp4">
-                          </video>
-                        </div>
-                        <!-- <div class="col-lg-6">
-                          <button onclick="getCurTime()" type="button">Get current time position</button>
-                          <button onclick="setCurTime()" type="button">Set time position to 5 seconds</button><br>
-                          <video id="myVideo" autoplay muted playsinline style="max-width: 100%">
-                            <source src="./video/sub01-02-01-01.mp4" type="video/mp4">
-                          </video>
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <video autoplay muted playsinline style="max-width: 100%">
-                            <source src="./video/sub01-02-01-02.mp4" type="video/mp4">
-                          </video>
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart2"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 설정기간 현황 -->
-                <div class="col-xl-5">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 부하별 전력사용량</h6>
-                    </div>
-                    <div class="card-body" style="text-align: center;">
-                      <video autoplay muted loop playsinline style="max-width: 100%">
-                        <source src="./video/sub01-02-02.mp4" type="video/mp4">
-                      </video>
-                      <!-- <img src="./img/Screenshot_176.jpg" style="height: 320px;"> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지사용량과 역률</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body" style="text-align: center">
-                      <video autoplay muted playsinline style="max-width: 100%">
-                        <source src="./video/sub01-02-03.mp4" type="video/mp4">
-                      </video>
-                      <!-- <div class="chart-bar">
-                        <canvas id="myBarChart"></canvas>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <!-- Card Header - Dropdown -->
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">단위공정별 에너지 및 엑서지 효율</h6>
-                    </div>
-                    <!-- Card Body -->
-                    <div class="card-body" style="text-align: center">
-                      <video autoplay muted playsinline style="max-width: 100%">
-                        <source src="./video/sub01-02-04.mp4" type="video/mp4">
-                      </video>
-                      <!-- <div class="chart-bar">
-                        <canvas id="myBarChart2"></canvas>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 온실가스 -->
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
-                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-12 text-center">
-                          <div class="video-wrap h500">
-                            <video autoplay muted playsinline style="max-width: 80%;">
-                              <source src="./video/sub01-03-01.mp4" type="video/mp4">
-                            </video>
-                          </div>
-                        </div>
-                        <!-- <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart3"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart4"></canvas>
-                          </div>
-                          <div class="mt-4 text-center small">
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-primary"></i> 생산
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-success"></i> 유틸리티
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-info"></i> 사무
-                            </span>
-                            <span class="mr-2">
-                              <i class="fas fa-circle text-warning"></i> 기타
-                            </span>
-                          </div>
-                        </div> -->
-                      </div>
-                      <!-- <hr>
-                      <div class="row">
-                        <div class="col-xl-6 text-center">
-                          간접 배출원 : <input type="text" style="display: inline-block; width: 90px;" class="form-control"
-                            value="909.56"> tCO<sub>2</sub>-eq
-                        </div>
-                        <div class="col-xl-6 text-center">
-                          직접 배출원 : <input type="text" style="display: inline-block; width: 90px;" class="form-control"
-                            value="50.32"> tCO<sub>2</sub>-eq
-                        </div>
-                      </div> -->
-                    </div>
-                  </div>
-
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">간접 및 직접 배출원의 단위공정별 온실가스 배출량</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="video-wrap h400">
-                        <video autoplay muted playsinline style="max-width: 100%">
-                          <source src="./video/sub01-03-02.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                      <!-- <div class="chart-bar">
-                        <canvas id="myBarChart5"></canvas>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">KRX 배출권시장 정보</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="table-wrap">
-                        <select class="form-control form-control-sm">
-                          <option>KAU-21</option>
-                        </select>
-
-
-                        <table class="table">
-                          <caption>배출권 시세조회 <i class="xi-plus"></i>
-                          </caption>
-                          <thead>
-                            <tr>
-                              <th scope="col">날짜</th>
-                              <th scope="col">종가</th>
-                              <th scope="col">대비</th>
-                              <th scope="col">등락률(%)</th>
-                              <th scope="col">거래량(톤)</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">2022/08/04</th>
-                              <td>16,150</td>
-                              <td class="red"><i class="xi-caret-up"></i> 1,450</td>
-                              <td>9.86</td>
-                              <td>45,697</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2022/08/04</th>
-                              <td>16,150</td>
-                              <td class="blue"><i class="xi-caret-down"></i> 1,250</td>
-                              <td>9.86</td>
-                              <td>45,697</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2022/08/04</th>
-                              <td>16,150</td>
-                              <td class="blue"><i class="xi-caret-down"></i> 1,750</td>
-                              <td>9.86</td>
-                              <td>45,697</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2022/08/04</th>
-                              <td>16,150</td>
-                              <td class="blue"><i class="xi-caret-down"></i> 900</td>
-                              <td>9.86</td>
-                              <td>45,697</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">2022/08/04</th>
-                              <td>16,150</td>
-                              <td class="red"><i class="xi-caret-up"></i> 100</td>
-                              <td>9.86</td>
-                              <td>45,697</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <hr>
-
-                      <div class="video-wrap h600">
-                        <video autoplay muted playsinline style="max-width: 90%;">
-                          <source src="./video/sub01-03-03.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                      <!-- <canvas id="myChart"></canvas> -->
-
-                    </div>
-                  </div>
-
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">산업부문 탄소배출 수준진단</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="row">
-                            <div class="col-lg-4">
-                              <strong>
-                                <label for="exampleFormControlSelect1">비교 산업분류</label>
-                              </strong>
-                            </div>
-                            <div class="col-lg-8">
-                              <select class="form-control" id="exampleFormControlSelect1">
-                                <option>243. 금속 주조업</option>
-                                <option>243. 금속 주조업</option>
-                                <option>243. 금속 주조업</option>
-                                <option>243. 금속 주조업</option>
-                                <option>243. 금속 주조업</option>
-                              </select>
-                              <p class="select-result">온실가스 배출량 : 756.5 tCO<sub>2</sub>-eq</p>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-4">
-                              <strong>
-                                <label for="exampleFormControlSelect2">대상 산업분류</label>
-                              </strong>
-                            </div>
-                            <div class="col-lg-8">
-                              <select class="form-control" id="exampleFormControlSelect2">
-                                <option>24312. 강 주물 주조업</option>
-                                <option>24312. 강 주물 주조업</option>
-                                <option>24312. 강 주물 주조업</option>
-                                <option>24312. 강 주물 주조업</option>
-                                <option>24312. 강 주물 주조업</option>
-                              </select>
-                              <p class="select-result">온실가스 배출량 : 959.9 tCO<sub>2</sub>-eq</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 text-center">
-                          <div class="video-wrap h200">
-                            <video autoplay muted playsinline style="max-width: 90%;">
-                              <source src="./video/sub01-03-04.mp4" type="video/mp4">
-                            </video>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- 생산 -->
-            <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">
-              <div class="row">
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 현황</h6>
-                      <div class="text-during">기준시간 2022.10.01 ~ 2022.11.30</div>
-                    </div>
-                    <div class="card-body">
-                      <!-- <div class="row">
-                        <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart5"></canvas>
-                            <div class="text-center pie-total-value">
-                              1,937,760 kg
-                            </div>
-                          </div>
-
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="chart-pie pt-4 pb-2">
-                            <canvas id="myPieChart6"></canvas>
-                            <div class="text-center pie-total-value">
-                              1,046,390 kg
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-                      <div class="video-wrap h500">
-                        <video autoplay muted playsinline style="max-width: 90%;">
-                          <source src="./video/sub01-04-01.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">설정기간 생산정보</h6>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-xl-7">
-                          <table class="table table-sm">
-                            <caption>판매계획</caption>
-                            <thead>
-                              <tr>
-                                <th>
-                                  <span>제품명/제품번호</span>
-                                </th>
-                                <th>
-                                  <span>생산수량(ea)</span>
-                                </th>
-                                <th>
-                                  <span>판매금액(천원)</span>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  Flange/SJFL00224
-                                </td>
-                                <td>
-                                  &nbsp;61,360
-                                </td>
-                                <td>
-                                  32,560
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Elbow/1315241
-                                </td>
-                                <td>
-                                  18,560
-                                </td>
-                                <td>
-                                  14,690
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Bearing cap/A-Type
-                                </td>
-                                <td>
-                                  134,560
-                                </td>
-                                <td>
-                                  52,830
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Shaft/SPN049315
-                                </td>
-                                <td>
-                                  &nbsp;47,640
-                                </td>
-                                <td>
-                                  56,940
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  **** inlet/SJD15 611
-                                </td>
-                                <td>
-                                  14,940
-                                </td>
-                                <td>
-                                  33,820
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  C/A case/FCCA-003A13
-                                </td>
-                                <td>
-                                  4,530&nbsp;
-                                </td>
-                                <td>
-                                  34,210
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Base plate/A4710960842
-                                </td>
-                                <td>
-                                  9,450
-                                </td>
-                                <td>
-                                  199,430
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <table class="table table-sm">
-                            <caption>수주현황</caption>
-                            <thead>
-                              <tr>
-                                <th>
-                                  <span>제품명/제품번호</span>
-                                </th>
-                                <th>
-                                  <span>생산수량(ea)</span>
-                                </th>
-                                <th>
-                                  <span>생산 일자</span>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  Bracket/271
-                                </td>
-                                <td>
-                                  12,532
-                                </td>
-                                <td>
-                                  2023.01
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Flange/SJFL00224
-                                </td>
-                                <td>
-                                  44,293
-                                </td>
-                                <td>
-                                  2023.02
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Elbow/1315241
-                                </td>
-                                <td>
-                                  10,934
-                                </td>
-                                <td>
-                                  2023.03
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Bearing cap/A-Type
-                                </td>
-                                <td>
-                                  125,755
-                                </td>
-                                <td>
-                                  2023.02
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="col-xl-5">
-                          <table class="table table-sm">
-                            <caption>원부자재 재고현황</caption>
-                            <thead>
-                              <tr>
-                                <th>
-                                  <span>제품명</span>
-                                </th>
-                                <th>
-                                  <span>재고량(ton)</span>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  선철
-                                </td>
-                                <td>
-                                  200
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  고철
-                                </td>
-                                <td>
-                                  1,232
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  가탄제
-                                </td>
-                                <td>
-                                  35
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Fe-Si
-                                </td>
-                                <td>
-                                  24
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Fe-Mo
-                                </td>
-                                <td>
-                                  2.1
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Fe-Mn
-                                </td>
-                                <td>
-                                  2.1
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  1차접종제
-                                </td>
-                                <td>
-                                  6
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  2차접종제
-                                </td>
-                                <td>
-                                  3.6
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Sn
-                                </td>
-                                <td>
-                                  0.03
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  벤토나이트
-                                </td>
-                                <td>
-                                  364
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                </div>
-
-                <div class="col-xl-6">
-                  <div class="card shadow mb-4">
-                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-primary">제품 생산계획</h6>
-                    </div>
-                    <div class="card-body">
-                      <table class="table table-sm table-bordered text-center align-middle">
-                        <thead>
-                          <tr>
-                            <th>
-                              <p><span>제품명</span><span>/</span><span>제품번호</span></p>
-                            </th>
-                            <th>
-                              <p><span>고객사</span></p>
-                            </th>
-                            <th>
-                              <p><span>생산수량</span><span>(</span><span>ea</span><span>)</span></p>
-                            </th>
-                            <th>
-                              <p><span>단위 무게</span><span>(kg)</span></p>
-                            </th>
-                            <th>
-                              <p><span>생산 무게</span><span>(kg)</span></p>
-                            </th>
-                            <th>
-                              <p><span>회수율</span></p>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <p><span>Bracket/271</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;</span><span>17,360&nbsp;</span></p>
-                            </td>
-                            <td>
-                              <p><span>2.3</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;</span><span>39,928</span></p>
-                            </td>
-                            <td>
-                              <p><span>48.1%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Flange/SJFL00224</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;61,360</span></p>
-                            </td>
-                            <td>
-                              <p><span>0.67</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;41,111</span></p>
-                            </td>
-                            <td>
-                              <p><span>49.0%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Elbow/1315241</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>18,560</span></p>
-                            </td>
-                            <td>
-                              <p><span>1.6</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;29,696</span></p>
-                            </td>
-                            <td>
-                              <p><span>35.6</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Housing/3751A151</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;17,120</span></p>
-                            </td>
-                            <td>
-                              <p><span>2.85</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;48,792</span></p>
-                            </td>
-                            <td>
-                              <p><span>58.3%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Bearing cap/A-Type</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>239,520</span></p>
-                            </td>
-                            <td>
-                              <p><span>0.36</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;86,227</span></p>
-                            </td>
-                            <td>
-                              <p><span>51.3%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Shaft/SPN049315</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;47,640</span></p>
-                            </td>
-                            <td>
-                              <p><span>1.06</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;50,498&nbsp;</span></p>
-                            </td>
-                            <td>
-                              <p><span>40.9%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Cone inlet/SJD15 611</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>21,040</span></p>
-                            </td>
-                            <td>
-                              <p><span>1.0</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;21,040&nbsp;</span></p>
-                            </td>
-                            <td>
-                              <p><span>24.9%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>C/A case/FCCA-003A13</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;9,600&nbsp;</span></p>
-                            </td>
-                            <td>
-                              <p><span>2.15</span></p>
-                            </td>
-                            <td>
-                              <p><span>20,640</span></p>
-                            </td>
-                            <td>
-                              <p><span>48.9%</span></p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <p><span>Base plate/A4710960842</span></p>
-                            </td>
-                            <td>
-                              <p><span>** co.</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;15,600</span></p>
-                            </td>
-                            <td>
-                              <p><span>0.79</span></p>
-                            </td>
-                            <td>
-                              <p><span>&nbsp;12,324</span></p>
-                            </td>
-                            <td>
-                              <p><span>27.1%</span></p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <hr>
-                      <div class="video-wrap h200">
-                        <video autoplay muted playsinline style="max-width: 100%;">
-                          <source src="./video/sub01-04-02.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                      <hr>
-                      <p>용해 일정관리</p>
-                      <div class="video-wrap h300">
-                        <video autoplay muted playsinline style="max-width: 100%;">
-                          <source src="./video/sub01-04-03.mp4" type="video/mp4">
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-          <!-- /.container-fluid -->
-
-        </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white" data-include="./include/footer.html"></footer>
-        <!-- End of Footer -->
-
-      </div>
-      <!-- End of Content Wrapper -->
-
+    <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" autoplay muted playsinline loop id="introVideo">
+        <source src="./video/intro.mp4" type="video/mp4">
+      </video>
     </div>
-    <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
+    <div class="chart-wrap">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="button">
+      <div class="button-item">
+        <button type="button" onclick="getCurTime()">getCurTime</button>
+      </div>
+      <div class="button-item">
+        <button type="button" onclick="setCurTime(5)">5초</button>
+        <button type="button" onclick="setCurTime(10)">10초</button>
+        <button type="button" onclick="setCurTime(15)">15초</button>
+        <button type="button" onclick="setCurTime(20)">20초</button>
+        <button type="button" onclick="setCurTime(25)">25초</button>
+      </div>
+    </div>
+
+
 
   </div>
-
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <!-- <script src="vendor/chart.js/Chart.min.js"></script> -->
-
-  <!-- Page level custom scripts -->
-  <!-- <script src="js/demo/chart-area-demo.js"></script>
-  <script src="js/demo/chart-pie-demo.js"></script>
-  <script src="js/demo/chart-bar-demo.js"></script>
-  <script src="js/demo/chart-mixed.js"></script> -->
-
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" defer></script>
-  <!-- include -->
-  <script src="js/include.min.js" defer></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    var vid = document.getElementById("myVideo");
+    var vid = document.getElementById("introVideo");
 
     function getCurTime() {
       alert(vid.currentTime);
     }
 
-    function setCurTime() {
-      vid.currentTime = 1;
-    } 
+    function setCurTime(second) {
+      vid.currentTime = second;
+    }
+
+    var barChartData = {
+      labels: [
+        "0",
+        "10",
+        "20",
+        "30",
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100",
+        "110",
+        "120",
+        "130",
+        "140",
+        "150",
+        "160",
+        "170",
+        "180",
+        "190",
+        "200",
+        "210",
+        "220",
+        "230",
+        "240",
+        "250",
+        "260",
+        "270",
+        "280",
+        "290",
+        "300",
+        "310",
+        "320",
+        "330",
+        "340",
+        "350",
+        "360",
+        "370",
+        "380",
+        "390",
+        "400",
+        "410",
+        "420",
+        "430",
+        "440",
+        "450",
+        "460",
+        "470",
+        "480",
+        "490",
+        "500",
+        "510",
+        "520",
+        "530",
+        "540",
+        "550",
+        "560",
+        "570",
+        "580",
+        "590",
+        "600"
+      ],
+      datasets: [
+        {
+          label: "Operation w.o. load",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#3f7ca9",
+          borderColor: "#3f7ca9",
+          borderWidth: 1,
+          stack: 'bef',
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 110, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 110, 0, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          label: "Melt standby at furnace",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#eb7f1b",
+          borderColor: "#eb7f1b",
+          borderWidth: 1,
+          stack: 'bef',
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 40, 40, 30, 0, 0, 0, 0, 0, 35, 40, 45, 30, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 70, 30, 0, 0, 0, 0, 0]
+        },
+        {
+          label: "Furnace melting",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#ba2832",
+          borderColor: "#ba2832",
+          borderWidth: 1,
+          stack: 'now',
+          data: [0, 10, 15, 20, 0, 10, 15, 20, 40, 0, 0, 0, 0, 0, 10, 15, 20, 25, 30, 0, 0, 0, 0, 15, 20, 25, 30, 0, 0, 0, 0, 10, 15, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      ]
+    };
+
+    var chartOptions = {
+      responsive: true,
+      scales: {
+        yAxes: [
+          {
+            id: "bar-stack",
+            position: "left",
+            stacked: true,
+            ticks: {
+              beginAtZero: true
+            }
+          }
+        ]
+      }
+    }
+
+    window.onload = function () {
+      var ctx = document.getElementById("myChart");
+      window.myBar = new Chart(ctx, {
+        type: "bar",
+        data: barChartData,
+        options: chartOptions
+      });
+
+      // Chart Click Event
+      document.getElementById("myChart").onclick = function (evt) {
+
+        var activePoints = window.myBar.getElementsAtEventForMode(evt, 'point', window.myBar.options);
+
+        console.log(activePoints[0].index)
+
+        switch (activePoints[0].index) {
+          case 5:
+            setCurTime(5)
+            break;
+          case 11:
+            setCurTime(10)
+            break;
+          case 52:
+            setCurTime(25)
+            break;
+        }
+
+      };
+
+
+    };
+
   </script>
 </body>
 

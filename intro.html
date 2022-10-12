@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>EES MP</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+
+<body class="fixed">
+  <div class="intro-wrap">
+
+    <h1 class="logo2">
+      <a href="main.html">
+        <img src="img/logo2.png" alt="">
+      </a>
+    </h1>
+
+    <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" autoplay muted playsinline loop id="introVideo">
+        <source src="./video/intro.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="chart-wrap">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="button">
+      <div class="button-item">
+        <button type="button" onclick="getCurTime()">getCurTime</button>
+      </div>
+      <div class="button-item">
+        <button type="button" onclick="setCurTime(5)">5초</button>
+        <button type="button" onclick="setCurTime(10)">10초</button>
+        <button type="button" onclick="setCurTime(15)">15초</button>
+        <button type="button" onclick="setCurTime(20)">20초</button>
+        <button type="button" onclick="setCurTime(25)">25초</button>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    var vid = document.getElementById("introVideo");
+
+    function getCurTime() {
+      alert(vid.currentTime);
+    }
+
+    function setCurTime(second) {
+      vid.currentTime = second;
+    }
+
+    var barChartData = {
+      labels: [
+        "0",
+        "10",
+        "20",
+        "30",
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100",
+        "110",
+        "120",
+        "130",
+        "140",
+        "150",
+        "160",
+        "170",
+        "180",
+        "190",
+        "200",
+        "210",
+        "220",
+        "230",
+        "240",
+        "250",
+        "260",
+        "270",
+        "280",
+        "290",
+        "300",
+        "310",
+        "320",
+        "330",
+        "340",
+        "350",
+        "360",
+        "370",
+        "380",
+        "390",
+        "400",
+        "410",
+        "420",
+        "430",
+        "440",
+        "450",
+        "460",
+        "470",
+        "480",
+        "490",
+        "500",
+        "510",
+        "520",
+        "530",
+        "540",
+        "550",
+        "560",
+        "570",
+        "580",
+        "590",
+        "600"
+      ],
+      datasets: [
+        {
+          label: "Operation w.o. load",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#3f7ca9",
+          borderColor: "#3f7ca9",
+          borderWidth: 1,
+          stack: 'bef',
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 110, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 110, 0, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          label: "Melt standby at furnace",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#eb7f1b",
+          borderColor: "#eb7f1b",
+          borderWidth: 1,
+          stack: 'bef',
+          data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 40, 40, 30, 0, 0, 0, 0, 0, 35, 40, 45, 30, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 70, 30, 0, 0, 0, 0, 0]
+        },
+        {
+          label: "Furnace melting",
+          yAxisID: 'bar-stack',
+          backgroundColor: "#ba2832",
+          borderColor: "#ba2832",
+          borderWidth: 1,
+          stack: 'now',
+          data: [0, 10, 15, 20, 0, 10, 15, 20, 40, 0, 0, 0, 0, 0, 10, 15, 20, 25, 30, 0, 0, 0, 0, 15, 20, 25, 30, 0, 0, 0, 0, 10, 15, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+      ]
+    };
+
+    var chartOptions = {
+      responsive: true,
+      scales: {
+        yAxes: [
+          {
+            id: "bar-stack",
+            position: "left",
+            stacked: true,
+            ticks: {
+              beginAtZero: true
+            }
+          }
+        ]
+      }
+    }
+
+    window.onload = function () {
+      var ctx = document.getElementById("myChart");
+      window.myBar = new Chart(ctx, {
+        type: "bar",
+        data: barChartData,
+        options: chartOptions
+      });
+
+      // Chart Click Event
+      document.getElementById("myChart").onclick = function (evt) {
+
+        var activePoints = window.myBar.getElementsAtEventForMode(evt, 'point', window.myBar.options);
+
+        console.log(activePoints[0].index)
+
+        switch (activePoints[0].index) {
+          case 5:
+            setCurTime(5)
+            break;
+          case 11:
+            setCurTime(10)
+            break;
+          case 52:
+            setCurTime(25)
+            break;
+        }
+
+      };
+
+
+    };
+
+  </script>
+</body>
+
+</html>
