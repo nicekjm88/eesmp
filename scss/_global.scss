@@ -371,8 +371,9 @@ caption {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  width: 1280px;
+  width: 1600px;
   margin: 0 auto;
+  transform: scale(0.75);
 }
 
 .svg {
