@@ -1187,16 +1187,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script>
-    var vid = document.getElementById("myVideo");
-
-    function getCurTime() {
-      alert(vid.currentTime);
-    }
-
-    function setCurTime() {
-      vid.currentTime = 1;
-    }
-
     const svgContainer1 = document.querySelector('#svg1');
     const animItem1 = bodymovin.loadAnimation({
       wrapper: svgContainer1,
@@ -1232,16 +1222,6 @@
       autoplay: false,
       path: '/json/sub01-02-04.json',
     })
-
-    // const svgContainer4 = document.querySelector('#svg4');
-    // const animItem4 = bodymovin.loadAnimation({
-    //   wrapper: svgContainer4,
-    //   animType: 'svg',
-    //   loop: false,
-    //   autoplay: false,
-    //   path: '/json/sub01-02-02.json',
-    // })
-
 
 
     $('#profile-tab').on('click', function () {
