@@ -44,22 +44,6 @@
     <div class="chart-wrap">
       <canvas id="myChart"></canvas>
     </div>
-
-    <div class="button">
-      <div class="button-item">
-        <button type="button" onclick="getCurTime()">getCurTime</button>
-      </div>
-      <div class="button-item">
-        <button type="button" onclick="setCurTime(5)">5초</button>
-        <button type="button" onclick="setCurTime(10)">10초</button>
-        <button type="button" onclick="setCurTime(15)">15초</button>
-        <button type="button" onclick="setCurTime(20)">20초</button>
-        <button type="button" onclick="setCurTime(25)">25초</button>
-      </div>
-    </div>
-
-
-
   </div>
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -142,7 +126,7 @@
       ],
       datasets: [
         {
-          label: "Operation w.o. load",
+          label: "무부하 운전 손실",
           yAxisID: 'bar-stack',
           backgroundColor: "#3f7ca9",
           borderColor: "#3f7ca9",
@@ -151,7 +135,7 @@
           data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 110, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 110, 0, 0, 0, 0, 0, 0, 0]
         },
         {
-          label: "Melt standby at furnace",
+          label: "용탕 대기 열손실",
           yAxisID: 'bar-stack',
           backgroundColor: "#eb7f1b",
           borderColor: "#eb7f1b",
@@ -160,7 +144,7 @@
           data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 40, 40, 30, 0, 0, 0, 0, 0, 35, 40, 45, 30, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 15, 40, 45, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 70, 70, 30, 0, 0, 0, 0, 0]
         },
         {
-          label: "Furnace melting",
+          label: "용해 열손실",
           yAxisID: 'bar-stack',
           backgroundColor: "#ba2832",
           borderColor: "#ba2832",
