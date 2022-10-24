@@ -291,6 +291,7 @@ caption {
 }
 
 /* 모달 무비 */
+
 .modal-content {
   &.modal-movie {
     border-radius: 0;
@@ -341,7 +342,58 @@ caption {
 .video-wrap {
   overflow: hidden;
   position: relative;
+
+  &.crap {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      z-index: 10;
+      margin-left: -400px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      z-index: 10;
+      margin-right: -400px;
+    }
+  }
+
+  &.crap2 {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      z-index: 10;
+      margin-left: -600px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+      height: 100%;
+      width: 20px;
+      background-color: #fff;
+      z-index: 10;
+      margin-right: -600px;
+    }
+  }
 }
+
 .video-wrap.h200 {
   height: 200px;
 }
@@ -389,6 +441,7 @@ caption {
   justify-content: center;
   width: 1500px;
   margin: 0 auto;
+  transform: scale(0.75);
 }
 
 .svg {
@@ -455,5 +508,22 @@ caption {
   img {
     width: 1400px;
     max-width: 100%;
+  }
+}
+
+.img-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 50%;
+    height: 270px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
