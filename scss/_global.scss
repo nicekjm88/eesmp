@@ -343,55 +343,55 @@ caption {
   overflow: hidden;
   position: relative;
 
-  &.crap {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      height: 100%;
-      width: 20px;
-      background-color: #fff;
-      z-index: 10;
-      margin-left: -400px;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 50%;
-      height: 100%;
-      width: 20px;
-      background-color: #fff;
-      z-index: 10;
-      margin-right: -400px;
-    }
-  }
+  // &.crap {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 50%;
+  //     height: 100%;
+  //     width: 20px;
+  //     background-color: #fff;
+  //     z-index: 10;
+  //     margin-left: -400px;
+  //   }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 50%;
+  //     height: 100%;
+  //     width: 20px;
+  //     background-color: #fff;
+  //     z-index: 10;
+  //     margin-right: -400px;
+  //   }
+  // }
 
-  &.crap2 {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      height: 100%;
-      width: 20px;
-      background-color: #fff;
-      z-index: 10;
-      margin-left: -600px;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 50%;
-      height: 100%;
-      width: 20px;
-      background-color: #fff;
-      z-index: 10;
-      margin-right: -600px;
-    }
-  }
+  // &.crap2 {
+  //   &::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 50%;
+  //     height: 100%;
+  //     width: 20px;
+  //     background-color: #fff;
+  //     z-index: 10;
+  //     margin-left: -600px;
+  //   }
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 50%;
+  //     height: 100%;
+  //     width: 20px;
+  //     background-color: #fff;
+  //     z-index: 10;
+  //     margin-right: -600px;
+  //   }
+  // }
 }
 
 .video-wrap.h200 {
